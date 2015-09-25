@@ -1,0 +1,14 @@
+{
+    "name": "webexcess/flowkeycdn",
+    "type": "typo3-flow-package",
+    "description": "A Package to use KeyCDN for persistent resources in the Flow Framework",
+    "require": {
+        "typo3/flow": "3.0.*",
+        "touki/ftp": "1.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "WebExcess\\FlowKeyCDN": "Classes"
+        }
+    }
+}
