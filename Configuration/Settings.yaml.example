@@ -1,0 +1,54 @@
+WebExcess:
+  FlowKeyCDN:
+    default:
+      host: ftp.keycdn.com
+      user: USERNAME
+      pass: PASSWORD
+      zone: ZONE_NAME
+      zoneDomain: ZONE_DOMAIN
+      apiKey: API_KEY
+      debug: false
+
+# Minimal Neos settings to use the package credentials
+#
+# TYPO3:
+#   Flow:
+#     resource:
+#
+#       storages:
+#         keyCDNPersistentResourcesStorage:
+#           storage: 'WebExcess\FlowKeyCDN\KeyCDNStorage'
+#
+#       collections:
+#         persistent:
+#           storage: 'keyCDNPersistentResourcesStorage'
+#           target: 'keyCDNWebDirectoryPersistentResourcesTarget'
+#
+#       targets:
+#         keyCDNWebDirectoryPersistentResourcesTarget:
+#           target: 'WebExcess\FlowKeyCDN\KeyCDNTarget'
+
+# Neos settings if you need other credentials than the package provides
+#
+# TYPO3:
+#   Flow:
+#     resource:
+#
+#       storages:
+#         keyCDNPersistentResourcesStorage:
+#           storage: 'WebExcess\FlowKeyCDN\KeyCDNStorage'
+#           storageOptions:
+#             zone: OTHER_ZONE_NAME
+#             zoneDomain: OTHER_ZONE_DOMAIN
+#
+#       collections:
+#         persistent:
+#           storage: 'keyCDNPersistentResourcesStorage'
+#           target: 'keyCDNWebDirectoryPersistentResourcesTarget'
+#
+#       targets:
+#         keyCDNWebDirectoryPersistentResourcesTarget:
+#           target: 'WebExcess\FlowKeyCDN\KeyCDNTarget'
+#           targetOptions:
+#             zone: OTHER_ZONE_NAME
+#             zoneDomain: OTHER_ZONE_DOMAIN
